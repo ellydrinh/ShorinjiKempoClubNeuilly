@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   end
 
   def asso2
-        @titre = "Conseil d'Administration"
+        @titre = "Activités"
   end
 
   def sk
@@ -22,15 +22,15 @@ class PagesController < ApplicationController
   end
 
   def sk1
-      @titre = "Présentation SK" 
+        @titre = "Historique" 
   end
 
   def sk2
-        @titre = "Historique"
+        @titre = "Caractéristiques"
   end
 
-  def manif
-        @titre = "Manifestations"
+  def sk3
+        @titre = "Techniques"
   end
 
   def media
@@ -39,3 +39,7 @@ class PagesController < ApplicationController
 
   def contact
         @titre = "Contact"
+  end
+
+
+end

@@ -1,10 +1,37 @@
 <footer>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "À Propos", '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-      <li><a href="http://www.railstutorial.org/">Tutoriel Rails</a></li>
-    </ul>
-  </nav>
+<div id="colonnes">
+		<img src="images/tn_logoSK.png" alt="Manji" title="Manji du Shorinji Kempo" id="logo2">
+		<div id="posts">
+			<h1>Derniers posts</h1>
+			<a href="#"> Stage Chesnay </a><br>
+			<a href="#"> Japan Expo 2012 </a><br>
+			<a href="#"> Décès de la veuve du fondateur </a>
+		</div>
+		<div id="contacts">
+			<h1>Contact</h1>
+			<form method="post" action="traitement.php">
+				<p>
+					<div id="nom">
+					<input type="text" name="nom" id="nom"/>
+					<label for="nom">Nom</label>
+					<br/>
+					</div>
+					
+					<div id="mail">
+					<input type="email" name="mail" id="mail"/>
+					<label for="mail">E-Mail</label>
+					<br/>
+					</div>
+					<textarea name="commentaire" id="commentaire"></textarea>
+					
+					<br/>
+					<input type="submit" value="Envoyer" id="envoyer"/>
+				</p>
+				
+			</form>
+		</div>
+		<p>© 2013 ShorinjiKempo-NeuillyClub.<br/>
+		Le logo et le nom Shorinji Kempo sont la propriété de la World Shorinji Kempo Organisation</p>
+	</div>
 </footer>
+

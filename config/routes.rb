@@ -4,12 +4,13 @@ ShorinjiKempoClubNeuilly::Application.routes.draw do
   match '/shorinjikempo', :to => 'pages#sk', :via => [:get, :post]
   match '/association', :to => 'pages#asso', :via => [:get, :post]
   match '/presentation', :to => 'pages#asso1', :via => [:get, :post]
-  match '/conseiladministratif', :to => 'pages#asso2', :via => [:get, :post]
-  match '/presentationsk', :to => 'pages#sk1', :via => [:get, :post]
-  match '/historique', :to => 'pages#sk2', :via => [:get, :post]
-  match '/manifestations', :to => 'pages#manif', :via => [:get, :post]
+  match '/activites', :to => 'pages#asso2', :via => [:get, :post]
+  match '/historique', :to => 'pages#sk1', :via => [:get, :post]
+  match '/caracteristiques', :to => 'pages#sk2', :via => [:get, :post]
+  match '/techniques', :to => 'pages#sk3', :via => [:get, :post]
   match '/medias', :to => 'pages#media', :via => [:get, :post]
   match '/contact', :to => 'pages#contact', :via => [:get, :post]
+
 
   #get "pages/home"
   #get "pages/asso"

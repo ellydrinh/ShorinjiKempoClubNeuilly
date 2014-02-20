@@ -1,2 +1,36 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+		<div id="section1">
+		<div id="section1a">
+			<h1>Shorinji Kempo Club Neuilly</h1>
+				<p>Dojo de la Chapelle<br>
+					21 Avenue de la Chapelle<br>
+					75018 Paris<br>
+					FRANCE
+				</p>
+			<img src="images/tn_email.png" alt="logo email" id="logo_email"/><A HREF="mailto:skitoko@shorinjikempo-neuillyclub.com">skitoko@shorinjikempo-neuillyclub.com</A><br>
+			<p><img src="images/tn_mobile.jpg" alt="logo mobile" id="logo_mobile"/> +33 (0)6 75 15 86 30</p>
+		</div>
+		<div id="section1b">
+			<img src="images/tn_gline.png" alt="" id="gline"/>
+			<img src="images/tn_gline.png" alt="" id="gline2"/>
+			<form method="post" action="traitement.php">
+				<p>
+					<div id="nom1">
+					<label for="nom" id="txtnom">Nom et prénom</label>
+					<input type="text" name="nom" id="nom"/>
+					<br/>
+					</div>
+					
+					<div id="mail1">
+					<label for="mail" id="txtmail">E-Mail</label>
+					<input type="email" name="mail" id="mail"/>
+					<br/>
+					</div>
+					<p id="votremessage">Votre message:</p>
+					<textarea name="commentaire" id="commentaire"></textarea>
+					
+					<br/>
+					<input type="submit" value="Envoyer" id="envoyer"/>
+				</p>
+			</form>				
+		</div>	
+		</div>
