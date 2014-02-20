@@ -1,4 +1,14 @@
 ShorinjiKempoClubNeuilly::Application.routes.draw do
+  get "pages/asso1"
+  get "pages/asso2"
+  get "pages/sk1"
+  get "pages/sk2"
+  get "pages/home"
+  get "pages/asso"
+  get "pages/sk"
+  get "pages/manif"
+  get "pages/media"
+  get "pages/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
