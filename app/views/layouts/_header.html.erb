@@ -1,5 +1,5 @@
 <header>
-				<img src="images/titreSK.jpg" alt"Logo du Shorinji Kempo" id="logo" title="Le logo représente un Manji"/>
+				<%= image_tag("titreSK.jpg", :alt => "Logo du Shorinji Kempo", :class => "round") %>
 			<h1> Shorinji Kempo Club Neuilly </h1>
 						
 			<nav>
@@ -11,12 +11,13 @@
 							<li><%= link_to "Activités", activites_path %></li>
 						</ul>
 					</li>					
-			        <li><%= link_to "Shorinji Kempo", shorinjikempo_path %></li>
+			        <li><%= link_to "Shorinji Kempo", shorinjikempo_path %>
 						<ul>
 							<li><%= link_to "Historique", historique_path %></li>
 							<li><%= link_to "Caractéristiques", caracteristiques_path %></li>
 							<li><%= link_to "Techniques", techniques_path %></li>
-						</ul>			        	
+						</ul>
+					</li>      	
 					<li><%= link_to "Médias", medias_path %></li>
 					<li><%= link_to "Contact", contact_path %></li>
 				</ul>

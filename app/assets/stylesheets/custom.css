@@ -1,0 +1,547 @@
+@font-face
+{
+    font-family: 'jap2';
+    src: url('/fonts/jap2.otf');
+}
+
+.indent {
+   text-indent: 40px;
+}
+body
+{
+font-family: verdana, sans-serif;
+color: rgba(52,52,52,1);
+}
+
+#bloc_page
+{
+width: 900px;
+margin: auto;
+}
+
+header h1, footer h1, nav a, section
+{
+text-transform: uppercase;
+}
+
+header
+{
+  display: inline-block;
+  width: 900px;
+  margin-bottom: 50px;
+    background: url('/assets/ligne.jpg') repeat-x bottom;
+  font-family: 'jap2';
+  font-size: 2em;
+  
+}
+
+#logo
+{
+margin-left:0px;
+margin-top: 30px;
+}
+
+header h1
+{
+display: inline-block;
+vertical-align: top;
+margin-top: 70px;
+}
+
+nav
+{
+  text-align: center;
+  padding: 0 80px;
+  
+}
+
+nav ul
+{
+  font-size: 0.8em;
+
+}
+
+
+nav a
+{
+    font-size: 1em;
+    color: rgba(52,52,52,0.9);
+  padding: 10px;
+    text-decoration: none;
+
+}
+
+
+#bandeau
+{
+position: relative;
+width: 800px;
+height: 400px;
+margin: auto;
+background: url('/assets/stage.jpg');
+}
+
+
+#bandeau_description1
+{
+position: absolute;
+bottom:175px;
+border-radius: 0px 0px 5px 5px;
+width: 50%;
+height: 40px;
+padding: 15px;
+background-color: rgba(24,24,24,0.8);
+color: white;
+font-size: 2em;
+font-family: 'jap2';
+right: 0px;
+text-align: center;
+}
+
+#bandeau a
+{
+display: inline-block;
+position:absolute;
+right:25px;
+top: 20px;
+width: 29px;
+height: 35px;
+background: url('/assets/fleche_sprite.png') 0px 0px no-repeat;
+}
+
+#bandeau a:hover
+{
+  background-position: 0px -35px;
+}
+
+section #section1
+{
+display: inline-block; 
+padding: 40px;
+margin-top: 50px;
+font-size: 2em;
+text-align: center;
+font-family: 'jap2';
+background: url('/assets/ligne.jpg') repeat-x bottom, url('/assets/ligne.jpg') repeat-x top;
+}
+
+footer
+{
+height: 350px;
+background-color: rgba(240,240,240,1);
+padding-top: 30px;
+padding-bottom: 20px;
+margin-top: 50px;
+}
+footer #colonnes
+{
+width:900px;
+margin: auto;
+}
+footer h1
+{
+font-family: 'jap2';
+font-size: 1.5em;
+}
+
+footer h2
+{
+font-size: 0.5em;
+}
+
+#posts, #contacts, #logo2
+{
+display: inline-block;
+vertical-align: top;
+}
+
+#posts
+{
+width:40%;
+margin-left:50px;
+}
+
+#posts a
+{
+display:inline-block;
+padding:5px;
+margin-bottom:10px;
+}
+
+#posts a:hover
+{
+background-color: #9b0000;
+color: white;
+}
+
+#contacts
+{
+width:30%;
+margin-left:100px;
+}
+
+#envoyer
+{
+text-transform: uppercase;
+font-size:1em;
+font-family: 'jap2';
+}
+#envoyer:hover
+{
+background-color: #9b0000;
+color: white;
+border-radius: 2px;
+text-transform: uppercase;
+font-size:1em;
+}
+
+textarea
+{
+height:100px;
+width:200px;
+margin: 5px;
+border: 0px;
+
+}
+
+form
+{
+left: -5px;
+position: relative;
+font-family: 'jap2';
+font-size: 1em;
+}
+form #nom
+{
+color: rgba(24,24,24,0.8);
+border:0px;
+margin:3px;
+
+}
+form #mail
+{
+color: rgba(24,24,24,0.8);
+border:0px;
+margin:3px;
+}
+
+
+footer p
+{
+width:100%;
+font-size: 0.8em;
+color: rgba(24,24,24,0.8);
+text-align: center;
+bottom:0px;
+margin-top: 30px;
+
+}
+
+
+
+
+
+
+/* Medias */
+#galleria
+{
+position: relative;
+margin: auto;
+width: 800px;
+height: 400px;
+background: #000;
+}
+
+
+
+
+
+
+
+
+/* ShorinjiKempo */
+
+#blocs
+{
+display: inline-block;
+position: relative;
+left:25px;
+margin-bottom:400px;
+}
+
+#blocs h1
+{
+font-family: 'jap2';
+margin-left:10px;
+}
+#blocs h2
+{
+font-size: 1em;
+margin-left:5px;
+margin-right:60px;
+}
+
+
+#blocs #img_bloc1,#blocs #img_bloc2,#blocs #img_bloc3
+{
+position: absolute;
+width:100%;
+height:50%;
+bottom:0px;
+}
+
+
+#bloc1
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+}
+#bloc2
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+left: 300px;
+}
+#bloc3
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+left:600px;
+}
+#bloc1 a, #bloc2 a, #bloc3 a
+{
+  display: inline-block;
+  position:absolute;
+  right:0px;
+  top: 20px;
+  width: 29px;
+  height: 35px;
+  background: url('/assets/fleche_sprite2.png') 0px 0px no-repeat;
+}
+#bloc1 a:hover,#bloc2 a:hover,#bloc3 a:hover
+{
+  background-position: 0px -35px;
+}
+
+/* CONTACT  */
+#section1
+{
+font-family:'jap2';
+font-size:1.2em;
+position: reative;
+height:500px;
+}
+#section1a p
+{
+font-size: 1,6em;
+font-family:verdana;
+text-transform: none;
+}
+#section1 a
+{
+font-family:verdana;
+}
+#section1 #nom, #section1 #mail, #section1 #commentaire
+{
+border: solid 2px;
+}
+#section1 #commentaire
+{
+margin-top:30px;
+height:300px;
+width:500px;
+}
+
+#section1a, #section1b
+{
+display: inline-block;
+position: absolute;
+}
+#section1a
+{
+position:absolute;
+top:440px;
+}
+#section1b
+{
+margin-left:450px;
+}
+#section1b #txtnom
+{
+position:absolute;
+left:5px;
+}
+#section1b #nom
+{
+position:absolute;
+left:120px;
+top:-3px;
+}
+#section1b #txtmail
+{
+position:absolute;
+left:5px;
+top:27px;
+}
+#section1b #mail
+{
+position:absolute;
+left:120px;
+}
+#section1b #votremessage
+{
+position:absolute;
+top:35px;
+left:5px;
+}
+#gline
+{
+position: absolute;
+left:-30px;
+bottom:210px;
+}
+#gline2
+{
+position: absolute;
+left:-30px;
+bottom:60px;
+}
+#logo_email
+{
+position:absolute;
+left:-40px;
+bottom:58px;
+}
+#logo_mobile
+{
+position:absolute;
+left:-42px;
+bottom:15px;
+}
+
+
+/*ASSOCIATION*/
+#blocsa
+{
+display: inline-block;
+position: relative;
+left:175px;
+margin-bottom:400px;
+}
+
+#blocsa h1
+{
+font-family: 'jap2';
+margin-left:10px;
+}
+#blocsa h2
+{
+font-size: 1em;
+margin-left:5px;
+margin-right:60px;
+}
+
+
+#blocsa #img_bloc1,#blocsa #img_bloc2
+{
+position: absolute;
+width:100%;
+height:50%;
+bottom:0px;
+}
+
+#bloc1a
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+}
+#bloc2a
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+left: 300px;
+}
+
+#bloc1a a, #bloc2a a
+{
+  display: inline-block;
+  position:absolute;
+  right:0px;
+  top: 20px;
+  width: 29px;
+  height: 35px;
+  background: url('/assets/fleche_sprite2.png') 0px 0px no-repeat;
+}
+
+#bloc1a a:hover, #bloc2a a:hover {
+  background-position: 0px -35px;
+}
+
+/* Bouton RETOUR */
+#retour
+{
+display:inline-block;
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+margin-top:15px;
+border: solid 1px;
+background-color:rgba(240,240,240,1);
+border-radius:5px;
+color:black;
+box-shadow: 0px -6px 10px rgba(200,200,200,1) inset;
+}
+#retour:hover
+{
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+border: solid 1px black;
+background-color:#9b0000;
+border-radius:5px;
+color:white;
+box-shadow: 0px -6px 10px #690000 inset;
+}
+
+/* ASSO: PRESENTATION */
+#asso1
+{
+position: relative;
+width: 800px;
+height: 400px;
+margin: auto;
+border: solid 2px ;
+}
+#asso1img
+{
+width: 800px;
+height: 400px;
+}
+
+#mainpresentation h1
+{
+font-family:'jap2';
+font-size:2em;
+}
+
+/* ASSO: ACTIVITES*/
+#mainactivites h1
+{
+font-family:'jap2';
+font-size:2em;
+}
+#mainactivites h2
+{
+font-family:'jap2';
+font-size:1.5em;
+}
