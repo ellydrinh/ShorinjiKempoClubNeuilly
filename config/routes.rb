@@ -1,14 +1,29 @@
 ShorinjiKempoClubNeuilly::Application.routes.draw do
-  get "pages/asso1"
-  get "pages/asso2"
-  get "pages/sk1"
-  get "pages/sk2"
-  get "pages/home"
-  get "pages/asso"
-  get "pages/sk"
-  get "pages/manif"
-  get "pages/media"
-  get "pages/contact"
+
+  root :to => 'pages#home', :via => [:get, :post]
+  match '/shorinjikempo', :to => 'pages#sk', :via => [:get, :post]
+  match '/association', :to => 'pages#asso', :via => [:get, :post]
+  match '/presentation', :to => 'pages#asso1', :via => [:get, :post]
+  match '/conseiladministratif', :to => 'pages#asso2', :via => [:get, :post]
+  match '/presentationsk', :to => 'pages#sk1', :via => [:get, :post]
+  match '/historique', :to => 'pages#sk2', :via => [:get, :post]
+  match '/manifestations', :to => 'pages#manif', :via => [:get, :post]
+  match '/medias', :to => 'pages#media', :via => [:get, :post]
+  match '/contact', :to => 'pages#contact', :via => [:get, :post]
+
+  #get "pages/home"
+  #get "pages/asso"
+  #get "pages/asso1"
+  #get "pages/asso2"
+  #get "pages/sk"
+  #get "pages/sk1"
+  #get "pages/sk2"
+  #get "pages/manif"
+  #get "pages/media"
+  #get "pages/contact"
+
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
