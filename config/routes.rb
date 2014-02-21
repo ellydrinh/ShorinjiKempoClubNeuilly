@@ -1,5 +1,7 @@
 ShorinjiKempoClubNeuilly::Application.routes.draw do
 
+  resources :users
+
   root :to => 'pages#home', :via => [:get, :post]
   match '/shorinjikempo', :to => 'pages#sk', :via => [:get, :post]
   match '/association', :to => 'pages#asso', :via => [:get, :post]
@@ -9,9 +11,9 @@ ShorinjiKempoClubNeuilly::Application.routes.draw do
   match '/caracteristiques', :to => 'pages#sk2', :via => [:get, :post]
   match '/techniques', :to => 'pages#sk3', :via => [:get, :post]
   match '/medias', :to => 'pages#media', :via => [:get, :post]
-  match '/contact', :to => 'pages#contact', :via => [:get, :post]
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match '/articles', :to => 'pages#articles', :via => [:get, :post]
-
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
   #get "pages/home"
   #get "pages/asso"
   #get "pages/asso1"

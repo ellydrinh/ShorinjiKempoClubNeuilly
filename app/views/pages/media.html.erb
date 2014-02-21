@@ -1,8 +1,9 @@
+<div id="medias">
 <p>Pensez à visiter la partie <%= link_to "Activités", activites_path %> de notre association pour découvrir nos manifestations en vidéos et images.</p>
 
 
-<div id="gallerie">
-		<div id="galleria">
+
+		<div class="galleria">
 			<%= image_tag("img1.jpg", :alt => "kaiso") %>
 			<%= image_tag("img2.jpg", :alt => "kaiso") %>
 			<%= image_tag("img3.jpg", :alt => "kaiso") %>
@@ -11,8 +12,12 @@
 			<%= image_tag("img6.jpg", :alt => "kaiso") %>
 			<%= image_tag("img7.jpg", :alt => "kaiso") %>
 		</div>
+
 		<script>
 			Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-			Galleria.run('#galleria');
+			$(".galleria").galleria({
+				width: 800,
+				height: 500
+			});
 		</script>
 </div>

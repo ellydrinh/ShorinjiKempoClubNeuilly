@@ -19,6 +19,7 @@ margin: auto;
 header h1, footer h1, nav a, #soussection
 {
 text-transform: uppercase;
+
 }
 
 header
@@ -110,9 +111,13 @@ margin-top: 50px;
 font-size: 2.5em;
 text-align: center;
 font-family: 'jap2';
-color:rgba(128,0,0,0.9);
-
 background: url('/assets/ligne.jpg') repeat-x bottom, url('/assets/ligne.jpg') repeat-x top;
+}
+
+section #soussection a
+{
+text-decoration: none;
+color:rgba(128,0,0,0.9);
 }
 
 footer
@@ -351,14 +356,14 @@ background-position: 0px -35px;
 {
   margin:auto;
   width: 800px;
-  font-size:1.5em;
+ 
   text-align : justify;
 }
 
 #mainpresentation h1
 {
 font-family:'jap2';
-font-size:1.8em !important;
+
 }
 
 #asso1
@@ -390,20 +395,21 @@ height: 400px;
 {
   margin:auto;
   width: 800px;
-  font-size:1.5em;
+
   text-align : justify;
 }
 
 #mainactivites h1
 {
 font-family:'jap2';
-font-size:1.8em !important;
+
 }
 
 #mainactivites h2
 {
+  margin-top:50px;
 font-family:'jap2';
-font-size:1.5em;
+
 }
 
 
@@ -413,7 +419,10 @@ font-size:1.5em;
 
 
 
-
+.galleria
+{
+margin-left:50px;
+}
 
 
 
@@ -555,17 +564,46 @@ transition: background .8s;
 
 
 
+/* ShorinjiKempo SK1 : HISTORIQUE, CARACT et TECHNIQUES*/
+#mainhistorique h1, #mainhistorique h2, #maincaracteristiques h1, #maintechniques h1, #maintechniques h2
+{
+  font-family: 'jap2';
+}
+
+#mainhistorique, #maincaracteristiques, #maintechniques
+{
+text-align:justify;
+}
+
+#sk1img1
+{
+float:right;
+}
+
+#sk1img2
+{
+  float:left;
+  position:relative;
+  padding-right: 20px;
+  top:50px;
+}
 
 
 
 
 
 
-
-
-
-
-
+/* MEDIAS */
+#medias p
+{
+font-size:1.5em;
+text-align: center;
+}
+#medias a
+{
+  text-decoration: none;
+  color:rgba(125,0,0,1);
+}
 
 
 
@@ -700,21 +738,6 @@ bottom:15px;
 
 
 
-
-
-
-
-
-
-/* Medias */
-#galleria, #galleria1, #galleria2, #galleria3 #galleria4, #galleria5, #galleria6
-{
-position: relative;
-margin: auto;
-width: 800px;
-height: 400px;
-background: #000;
-}
 
 
 

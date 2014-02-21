@@ -1,3 +1,4 @@
+		
 		<div id="section1">
 		<div id="section1a">
 			<h1>Shorinji Kempo Club Neuilly</h1>
@@ -10,29 +11,36 @@
 			<A HREF="mailto:skitoko@shorinjikempo-neuillyclub.com">skitoko@shorinjikempo-neuillyclub.com</A><br><br>
 
 			<p><%= image_tag("tn_mobile.jpg", :alt => "logo mobile", :id => "logo_mobile") %>+33 (0)6 75 15 86 30</p>
+
 		</div>
 		<div id="section1b">
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline") %>
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline2") %>
-			<form method="post" action="traitement.php">
-				<p>
-					<div id="nom1">
-					<label for="nom" id="txtnom">Nom et prénom</label>
-					<input type="text" name="nom" id="nom"/>
-					<br/>
-					</div>
-					
-					<div id="mail1">
-					<label for="mail" id="txtmail">E-Mail</label>
-					<input type="email" name="mail" id="mail"/>
-					<br/>
-					</div>
-					<p id="votremessage">Votre message:</p>
-					<textarea name="commentaire" id="commentaire"></textarea>
-					
-					<br/>
-					<input type="submit" value="Envoyer" id="envoyer"/>
-				</p>
-			</form>				
-		</div>	
+		
+	<%= form_for @message, :url => contact_path do |form| %>
+			  <fieldset class="fields">
+			    <div class="field">
+			      <%= form.label :nom %>
+			      <%= form.text_field :name %>
+			    </div>
+			    
+			    <div class="field">
+			      <%= form.label :'e-mail' %>
+			      <%= form.text_field :email %>
+			    </div>
+			    
+			    <div class="field">
+			      <%= form.label :'votre message:' %>
+			      <%= form.text_area :body %>
+			    </div>
+			  </fieldset>
+			  
+			  <fieldset class="actions">
+			    <%= form.submit "Envoyer" %>
+			  </fieldset>
+	<% end %>	
+
+			</div>	
 		</div>
+
+
