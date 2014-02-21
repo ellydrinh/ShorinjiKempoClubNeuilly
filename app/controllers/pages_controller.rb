@@ -41,5 +41,7 @@ class PagesController < ApplicationController
         @titre = "Contact"
   end
 
-
+  def articles
+        @titre = "Articles"
+  end
 end

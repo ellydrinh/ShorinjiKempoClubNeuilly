@@ -1,12 +1,13 @@
 <footer>
 <div id="colonnes">
-		<%= image_tag("tn_logoSK.png", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
+		
 		<div id="posts">
 			<h1>Derniers posts</h1>
-			<a href="#"> Stage Chesnay </a><br>
-			<a href="#"> Japan Expo 2012 </a><br>
-			<a href="#"> Décès de la veuve du fondateur </a>
+			<h2><%= link_to "Stage Chesnay", articles_path %></h2>
+			<h2><%= link_to "Japan Expo 2012", articles_path %></h2>
+			<h2><%= link_to "Décès de la veuve du fondateur", articles_path %></h2>
 		</div>
+
 		<div id="contacts">
 			<h1>Contact</h1>
 			<form method="post" action="traitement.php">
@@ -30,8 +31,9 @@
 				
 			</form>
 		</div>
+		<br/>
+		<%= image_tag("tn_logoSK.png", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
 		<p>© 2013 ShorinjiKempo-NeuillyClub.<br/>
 		Le logo et le nom Shorinji Kempo sont la propriété de la World Shorinji Kempo Organisation</p>
 	</div>
 </footer>
-

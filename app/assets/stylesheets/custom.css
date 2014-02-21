@@ -4,22 +4,19 @@
     src: url('/fonts/jap2.otf');
 }
 
-.indent {
-   text-indent: 40px;
-}
 body
 {
 font-family: verdana, sans-serif;
-color: rgba(52,52,52,1);
+color: rgba(55,55,55,1);
 }
 
-#bloc_page
+.container
 {
 width: 900px;
 margin: auto;
 }
 
-header h1, footer h1, nav a, section
+header h1, footer h1, nav a, #soussection
 {
 text-transform: uppercase;
 }
@@ -29,7 +26,7 @@ header
   display: inline-block;
   width: 900px;
   margin-bottom: 50px;
-    background: url('/assets/ligne.jpg') repeat-x bottom;
+  background: url('/assets/ligne.jpg') repeat-x bottom;
   font-family: 'jap2';
   font-size: 2em;
   
@@ -48,27 +45,18 @@ vertical-align: top;
 margin-top: 70px;
 }
 
+header .titre
+{
+  text-decoration: none;
+  color: rgba(55,55,55,1);
+}
 nav
 {
+  margin-left: 70px;
   text-align: center;
-  padding: 0 80px;
-  
-}
-
-nav ul
-{
-  font-size: 0.8em;
-
-}
-
-
-nav a
-{
-    font-size: 1em;
-    color: rgba(52,52,52,0.9);
-  padding: 10px;
-    text-decoration: none;
-
+  padding:0px;
+  margin:0px;
+  font-size: 1.2em;
 }
 
 
@@ -88,7 +76,7 @@ position: absolute;
 bottom:175px;
 border-radius: 0px 0px 5px 5px;
 width: 50%;
-height: 40px;
+height: 35px;
 padding: 15px;
 background-color: rgba(24,24,24,0.8);
 color: white;
@@ -103,7 +91,7 @@ text-align: center;
 display: inline-block;
 position:absolute;
 right:25px;
-top: 20px;
+top: 15px;
 width: 29px;
 height: 35px;
 background: url('/assets/fleche_sprite.png') 0px 0px no-repeat;
@@ -114,24 +102,26 @@ background: url('/assets/fleche_sprite.png') 0px 0px no-repeat;
   background-position: 0px -35px;
 }
 
-section #section1
+section #soussection
 {
-display: inline-block; 
-padding: 40px;
+padding-bottom: 1px;
+padding-top: 40px;
 margin-top: 50px;
-font-size: 2em;
+font-size: 2.5em;
 text-align: center;
 font-family: 'jap2';
+color:rgba(128,0,0,0.9);
+
 background: url('/assets/ligne.jpg') repeat-x bottom, url('/assets/ligne.jpg') repeat-x top;
 }
 
 footer
 {
-height: 350px;
+height: 380px;
 background-color: rgba(240,240,240,1);
 padding-top: 30px;
 padding-bottom: 20px;
-margin-top: 50px;
+margin-top: 0px;
 }
 footer #colonnes
 {
@@ -141,15 +131,17 @@ margin: auto;
 footer h1
 {
 font-family: 'jap2';
-font-size: 1.5em;
+font-size: 2em;
 }
 
 footer h2
 {
-font-size: 0.5em;
+
+margin:0px;
+font-size: 1.5em;
 }
 
-#posts, #contacts, #logo2
+#posts, #contacts
 {
 display: inline-block;
 vertical-align: top;
@@ -157,12 +149,14 @@ vertical-align: top;
 
 #posts
 {
+margin-left:75px;
 width:40%;
-margin-left:50px;
 }
 
 #posts a
 {
+text-decoration: none;
+color:rgba(0,0,0,0.5);
 display:inline-block;
 padding:5px;
 margin-bottom:10px;
@@ -176,8 +170,9 @@ color: white;
 
 #contacts
 {
-width:30%;
-margin-left:100px;
+position:relative;
+width:40%;
+margin-left:70px;
 }
 
 #envoyer
@@ -201,7 +196,6 @@ height:100px;
 width:200px;
 margin: 5px;
 border: 0px;
-
 }
 
 form
@@ -225,6 +219,11 @@ border:0px;
 margin:3px;
 }
 
+#logo2
+{
+margin-left: 400px;
+position:relative;
+}
 
 footer p
 {
@@ -233,8 +232,6 @@ font-size: 0.8em;
 color: rgba(24,24,24,0.8);
 text-align: center;
 bottom:0px;
-margin-top: 30px;
-
 }
 
 
@@ -242,15 +239,230 @@ margin-top: 30px;
 
 
 
-/* Medias */
-#galleria
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ASSOCIATION*/
+
+#blocsa
+{
+display: inline-block;
+position: relative;
+left:175px;
+margin-bottom:400px;
+}
+#blocsa h1
+{
+font-size: 2.5em;
+font-family: 'jap2';
+margin-left:30px;
+margin-top: 23px;
+}
+#blocsa h2
+{
+font-size: 1.3em;
+text-align:center;
+padding-top:50px;
+margin-left:10px;
+}
+#blocsa #img_bloc1,#blocsa #img_bloc2
+{
+position: absolute;
+width:100%;
+height:50%;
+bottom:0px;
+}
+
+#bloc1a
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+}
+
+#bloc2a
+{
+background-color: #a6aaac;
+position: absolute;
+height: 400px;
+width: 250px;
+left: 300px;
+}
+
+#bloc1a a, #bloc2a a
+{
+  display: inline-block;
+  position:absolute;
+  right:0px;
+  top: 20px;
+  width: 29px;
+  height: 35px;
+  background: url('/assets/fleche_sprite2.png') 0px 0px no-repeat;
+}
+
+#bloc1a:hover, #bloc2a:hover
+{
+background-color: rgba(200,125,0,0.6);
+-webkit-transition: background .2s;
+transition: background .8s;
+}
+
+#bloc1a:hover a, #bloc2a:hover a
+{
+  background-position: 0px -35px;
+}
+
+#bloc1a a:hover, #bloc2a a:hover
+{
+background-position: 0px -35px;
+}
+
+
+
+/* ASSO: PRESENTATION */
+#mainpresentation
+{
+  margin:auto;
+  width: 800px;
+  font-size:1.5em;
+  text-align : justify;
+}
+
+#mainpresentation h1
+{
+font-family:'jap2';
+font-size:1.8em !important;
+}
+
+#asso1
 {
 position: relative;
-margin: auto;
 width: 800px;
 height: 400px;
-background: #000;
+margin: auto;
+border: solid 2px ;
+margin-bottom: 30px;
 }
+
+#asso1img
+{
+width: 800px;
+height: 400px;
+
+}
+
+#mainpresentation #conseiladmin
+{
+  text-align: center;
+}
+
+
+
+/* ASSO: ACTIVITES*/
+#mainactivites
+{
+  margin:auto;
+  width: 800px;
+  font-size:1.5em;
+  text-align : justify;
+}
+
+#mainactivites h1
+{
+font-family:'jap2';
+font-size:1.8em !important;
+}
+
+#mainactivites h2
+{
+font-family:'jap2';
+font-size:1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bouton RETOUR */
+#retour
+{
+display:inline-block;
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+margin-top:15px;
+border: solid 1px;
+background-color:rgba(240,240,240,1);
+border-radius:5px;
+color:black;
+box-shadow: 0px -6px 10px rgba(200,200,200,1) inset;
+}
+#retour:hover
+{
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+border: solid 1px black;
+background-color:#9b0000;
+border-radius:5px;
+color:white;
+box-shadow: 0px -6px 10px #690000 inset;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -271,14 +483,18 @@ margin-bottom:400px;
 
 #blocs h1
 {
+font-size: 2.5em;
 font-family: 'jap2';
-margin-left:10px;
+margin-left:30px;
+margin-top: 23px;
+
 }
 #blocs h2
 {
-font-size: 1em;
-margin-left:5px;
-margin-right:60px;
+font-size: 1.3em;
+text-align:center;
+padding-top:25px;
+margin-left:10px;
 }
 
 
@@ -324,10 +540,47 @@ left:600px;
   height: 35px;
   background: url('/assets/fleche_sprite2.png') 0px 0px no-repeat;
 }
-#bloc1 a:hover,#bloc2 a:hover,#bloc3 a:hover
+
+#bloc1:hover ,#bloc2:hover ,#bloc3:hover 
+{
+background-color: rgba(200,125,0,0.6);
+-webkit-transition: background .2s;
+transition: background .8s;
+}
+
+#bloc1:hover a,#bloc2:hover a,#bloc3:hover a
 {
   background-position: 0px -35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CONTACT  */
 #section1
@@ -337,20 +590,24 @@ font-size:1.2em;
 position: reative;
 height:500px;
 }
+
 #section1a p
 {
 font-size: 1,6em;
 font-family:verdana;
 text-transform: none;
 }
+
 #section1 a
 {
 font-family:verdana;
 }
+
 #section1 #nom, #section1 #mail, #section1 #commentaire
 {
 border: solid 2px;
 }
+
 #section1 #commentaire
 {
 margin-top:30px;
@@ -363,61 +620,73 @@ width:500px;
 display: inline-block;
 position: absolute;
 }
+
 #section1a
 {
 position:absolute;
 top:440px;
 }
+
 #section1b
 {
 margin-left:450px;
+font-size:1.2em;
 }
+
 #section1b #txtnom
 {
 position:absolute;
 left:5px;
 }
+
 #section1b #nom
 {
 position:absolute;
 left:120px;
 top:-3px;
 }
+
 #section1b #txtmail
 {
 position:absolute;
 left:5px;
 top:27px;
 }
+
 #section1b #mail
 {
 position:absolute;
 left:120px;
 }
+
 #section1b #votremessage
 {
 position:absolute;
-top:35px;
+top:55px;
 left:5px;
 }
+
 #gline
 {
 position: absolute;
 left:-30px;
 bottom:210px;
 }
+
 #gline2
 {
 position: absolute;
 left:-30px;
 bottom:60px;
 }
+
 #logo_email
 {
 position:absolute;
 left:-40px;
 bottom:58px;
 }
+
 #logo_mobile
 {
 position:absolute;
@@ -426,122 +695,48 @@ bottom:15px;
 }
 
 
-/*ASSOCIATION*/
-#blocsa
-{
-display: inline-block;
-position: relative;
-left:175px;
-margin-bottom:400px;
-}
-
-#blocsa h1
-{
-font-family: 'jap2';
-margin-left:10px;
-}
-#blocsa h2
-{
-font-size: 1em;
-margin-left:5px;
-margin-right:60px;
-}
 
 
-#blocsa #img_bloc1,#blocsa #img_bloc2
-{
-position: absolute;
-width:100%;
-height:50%;
-bottom:0px;
-}
 
-#bloc1a
-{
-background-color: #a6aaac;
-position: absolute;
-height: 400px;
-width: 250px;
-}
-#bloc2a
-{
-background-color: #a6aaac;
-position: absolute;
-height: 400px;
-width: 250px;
-left: 300px;
-}
 
-#bloc1a a, #bloc2a a
-{
-  display: inline-block;
-  position:absolute;
-  right:0px;
-  top: 20px;
-  width: 29px;
-  height: 35px;
-  background: url('/assets/fleche_sprite2.png') 0px 0px no-repeat;
-}
 
-#bloc1a a:hover, #bloc2a a:hover {
-  background-position: 0px -35px;
-}
 
-/* Bouton RETOUR */
-#retour
-{
-display:inline-block;
-font-family:'jap2';
-font-size: 1.4em;
-padding:5px;
-margin-top:15px;
-border: solid 1px;
-background-color:rgba(240,240,240,1);
-border-radius:5px;
-color:black;
-box-shadow: 0px -6px 10px rgba(200,200,200,1) inset;
-}
-#retour:hover
-{
-font-family:'jap2';
-font-size: 1.4em;
-padding:5px;
-border: solid 1px black;
-background-color:#9b0000;
-border-radius:5px;
-color:white;
-box-shadow: 0px -6px 10px #690000 inset;
-}
 
-/* ASSO: PRESENTATION */
-#asso1
+
+
+
+
+/* Medias */
+#galleria
 {
 position: relative;
-width: 800px;
-height: 400px;
 margin: auto;
-border: solid 2px ;
-}
-#asso1img
-{
 width: 800px;
 height: 400px;
+background: #000;
 }
 
-#mainpresentation h1
-{
-font-family:'jap2';
-font-size:2em;
-}
 
-/* ASSO: ACTIVITES*/
-#mainactivites h1
-{
-font-family:'jap2';
-font-size:2em;
-}
-#mainactivites h2
-{
-font-family:'jap2';
-font-size:1.5em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
