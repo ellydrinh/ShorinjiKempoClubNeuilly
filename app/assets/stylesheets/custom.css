@@ -707,7 +707,7 @@ bottom:15px;
 
 
 /* Medias */
-#galleria
+#galleria, #galleria1, #galleria2, #galleria3 #galleria4, #galleria5, #galleria6
 {
 position: relative;
 margin: auto;
@@ -715,10 +715,6 @@ width: 800px;
 height: 400px;
 background: #000;
 }
-
-
-
-
 
 
 

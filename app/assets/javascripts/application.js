@@ -14,4 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require galleria/galleria-1.3.3.min.js
