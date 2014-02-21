@@ -1,5 +1,5 @@
 		
-		<div id="section1">
+	<div id="section1">
 		<div id="section1a">
 			<h1>Shorinji Kempo Club Neuilly</h1>
 				<p>Dojo de la Chapelle<br>
@@ -13,34 +13,30 @@
 			<p><%= image_tag("tn_mobile.jpg", :alt => "logo mobile", :id => "logo_mobile") %>+33 (0)6 75 15 86 30</p>
 
 		</div>
+
 		<div id="section1b">
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline") %>
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline2") %>
-		
-	<%= form_for @message, :url => contact_path do |form| %>
+			<%= form_for @message, :url => contact_path do |form| %>
 			  <fieldset class="fields">
 			    <div class="field">
-			      <%= form.label :nom %>
-			      <%= form.text_field :name %>
+			      <%= form.label :nom, id:"nom" %>
+			      <%= form.text_field :name, id:"txtnom" %>
 			    </div>
 			    
 			    <div class="field">
-			      <%= form.label :'e-mail' %>
-			      <%= form.text_field :email %>
+			      <%= form.label :'e-mail', id:"mail" %>
+			      <%= form.text_field :email, id:"txtmail" %>
 			    </div>
 			    
 			    <div class="field">
-			      <%= form.label :'votre message:' %>
-			      <%= form.text_area :body %>
+			      <%= form.label :'votre message:', id:"votremessage" %>
+			      <%= form.text_area :body, id:"commentaire" %>
 			    </div>
 			  </fieldset>
-			  
-			  <fieldset class="actions">
-			    <%= form.submit "Envoyer" %>
-			  </fieldset>
-	<% end %>	
-
-			</div>	
-		</div>
+			  <%= form.submit "Envoyer"%>
+			<% end %>	
+		</div>	
+	</div>
 
 

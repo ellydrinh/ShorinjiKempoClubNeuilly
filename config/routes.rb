@@ -13,7 +13,7 @@ ShorinjiKempoClubNeuilly::Application.routes.draw do
   match '/medias', :to => 'pages#media', :via => [:get, :post]
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match '/articles', :to => 'pages#articles', :via => [:get, :post]
-  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'contact' => 'contact#create', :via => :post
   #get "pages/home"
   #get "pages/asso"
   #get "pages/asso1"

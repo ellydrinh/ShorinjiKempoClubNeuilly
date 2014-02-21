@@ -648,7 +648,7 @@ border: solid 2px;
 
 #section1 #commentaire
 {
-margin-top:30px;
+margin-top:60px;
 height:300px;
 width:500px;
 }
@@ -674,48 +674,51 @@ font-size:1.2em;
 #section1b #txtnom
 {
 position:absolute;
-left:5px;
+left:100px;
+top:-5px;
 }
 
 #section1b #nom
 {
 position:absolute;
-left:120px;
+border: none;
+left:30px;
 top:-3px;
 }
 
 #section1b #txtmail
 {
 position:absolute;
-left:5px;
-top:27px;
+left:100px;
+top:20px;
 }
 
 #section1b #mail
 {
+border: none;
 position:absolute;
-left:120px;
+left:30px;
 }
 
 #section1b #votremessage
 {
 position:absolute;
-top:55px;
-left:5px;
+top:53px;
+left:33px;
 }
 
 #gline
 {
 position: absolute;
 left:-30px;
-bottom:210px;
+bottom:320px;
 }
 
 #gline2
 {
 position: absolute;
 left:-30px;
-bottom:60px;
+bottom:170px;
 }
 
 #logo_email
@@ -734,10 +737,11 @@ bottom:15px;
 
 
 
+#section1b .fields
+{
 
-
-
-
+  border:none;
+}
 
 
 

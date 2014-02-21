@@ -7,30 +7,29 @@
 			<h2><%= link_to "Japan Expo 2012", articles_path %></h2>
 			<h2><%= link_to "Décès de la veuve du fondateur", articles_path %></h2>
 		</div>
-
-<%= form_for @message, :url => contact_path do |form| %>
-			  <fieldset class="fields">
-			    <div class="field">
-			      <%= form.label :nom %>
-			      <%= form.text_field :name %>
-			    </div>
-			    
-			    <div class="field">
-			      <%= form.label :'e-mail' %>
-			      <%= form.text_field :email %>
-			    </div>
-			    
-			    <div class="field">
-			      <%= form.label :'votre message:' %>
-			      <%= form.text_area :body %>
-			    </div>
-			  </fieldset>
-			  
-			  <fieldset class="actions">
-			    <%= form.submit "Envoyer" %>
-			  </fieldset>
-	<% end %>	
-	
+		<div id="contacts">
+			<h1>Contact</h1>
+			<form method="post" action="traitement.php">
+				<p>
+					<div id="nom">
+					<input type="text" name="nom" id="nom"/>
+					<label for="nom">Nom</label>
+					<br/>
+					</div>
+					
+					<div id="mail">
+					<input type="email" name="mail" id="mail"/>
+					<label for="mail">E-Mail</label>
+					<br/>
+					</div>
+					<textarea name="commentaire" id="commentaire"></textarea>
+					
+					<br/>
+					<input type="submit" value="Envoyer" id="envoyer"/>
+				</p>
+				
+			</form>
+			</div>
 		<br/>
 		<%= image_tag("tn_logoSK.png", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
 		<p>© 2013 ShorinjiKempo-NeuillyClub.<br/>
