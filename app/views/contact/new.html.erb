@@ -17,6 +17,7 @@
 		<div id="section1b">
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline") %>
 			<%= image_tag("tn_gline.png", :alt => "", :id => "gline2") %>
+
 			<%= form_for @message, :url => contact_path do |form| %>
 			  <fieldset class="fields">
 			    <div class="field">
@@ -35,7 +36,8 @@
 			    </div>
 			  </fieldset>
 			  <%= form.submit "Envoyer"%>
-			<% end %>	
+			<% end %>
+
 		</div>	
 	</div>
 

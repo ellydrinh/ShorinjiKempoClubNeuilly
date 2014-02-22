@@ -7,7 +7,3 @@ class NotificationsMailer < ActionMailer::Base
     mail(:subject => "[Shorinji Kempo Club Neuilly]")
   end
 end
-
-class UserMailer < ActionMailer::Base
-  layout '_notifications_mailer' # use awesome.(html|text).erb as the layout
-end

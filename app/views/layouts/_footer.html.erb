@@ -9,26 +9,30 @@
 		</div>
 		<div id="contacts">
 			<h1>Contact</h1>
-			<form method="post" action="traitement.php">
-				<p>
-					<div id="nom">
-					<input type="text" name="nom" id="nom"/>
-					<label for="nom">Nom</label>
-					<br/>
-					</div>
-					
-					<div id="mail">
-					<input type="email" name="mail" id="mail"/>
-					<label for="mail">E-Mail</label>
-					<br/>
-					</div>
-					<textarea name="commentaire" id="commentaire"></textarea>
-					
-					<br/>
-					<input type="submit" value="Envoyer" id="envoyer"/>
-				</p>
-				
-			</form>
+
+
+			<%= form_for @message, :url => contact_path do |form| %>
+			  <fieldset class="fields">
+			    <div class="field">
+			      <%= form.label :nom, id:"nom" %>
+			      <%= form.text_field :name, id:"txtnom" %>
+			    </div>
+			    
+			    <div class="field">
+			      <%= form.label :'e-mail', id:"mail" %>
+			      <%= form.text_field :email, id:"txtmail" %>
+			    </div>
+			    
+			    <div class="field">
+			      <%= form.label :'votre message', id:"votremessage" %>
+			      <%= form.text_area :body, id:"commentaire" %>
+			    </div>
+			  </fieldset>
+			  <%= form.submit "Envoyer", id:"envoyer"%>
+			<% end %>	
+
+
+
 			</div>
 		<br/>
 		<%= image_tag("tn_logoSK.png", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
