@@ -13,21 +13,21 @@
 			<%= form_tag("/contact", method: "post") do %>
 			  <fieldset class="fields">
 			    <div class="field">
-			      <%= label "name", "nom" %>
-			      <%= text_field "message", "name" %>
+			      <%= label "name", "nom", id:"nom" %>
+			      <%= text_field "message", "name", id:"txtnom" %>
 			    </div>
 
 			    <div class="field">
-			      <%= label "mail", "e-mail" %>
-			      <%= text_field "message", "email" %>
+			      <%= label "mail", "e-mail", id:"mail"  %>
+			      <%= text_field "message", "email", id:"txtmail"  %>
 			    </div>
 
 			    <div class="field">
-			      <%= label "message", 'votre message' %>
-			      <%= text_area "message", "body" %>
+			      <%= label "message", 'votre message', id:"votremessage"  %>
+			      <%= text_area "message", "body", id:"commentaire"  %>
 			    </div>
 			  </fieldset>
-			  <%= submit_tag "Envoyer" %>
+			  <%= submit_tag "Envoyer" , id:"envoyer" %>
 			<% end %>
 
 

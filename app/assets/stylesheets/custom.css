@@ -246,9 +246,21 @@ bottom:0px;
 
 
 
+/*ARTICLES*/
+#articles p
+{
+  margin-bottom: 50px;
+}
+#articles h1, #articles h2
+{
+font-family: 'jap2';
+}
 
-
-
+#articles
+{
+  top:50px;
+  text-align: justify;
+}
 
 
 
@@ -438,33 +450,6 @@ margin-left:50px;
 
 
 
-/* Bouton RETOUR */
-#retour
-{
-display:inline-block;
-font-family:'jap2';
-font-size: 1.4em;
-padding:5px;
-margin-top:15px;
-border: solid 1px;
-background-color:rgba(240,240,240,1);
-border-radius:5px;
-color:black;
-box-shadow: 0px -6px 10px rgba(200,200,200,1) inset;
-}
-#retour:hover
-{
-font-family:'jap2';
-font-size: 1.4em;
-padding:5px;
-border: solid 1px black;
-background-color:#9b0000;
-border-radius:5px;
-color:white;
-box-shadow: 0px -6px 10px #690000 inset;
-}
-
-
 
 
 
@@ -490,7 +475,9 @@ position: relative;
 left:25px;
 margin-bottom:810px;
 }
-
+#maintechniques #blocs{
+  margin-bottom:400px;
+}
 #blocs h1
 {
 font-size: 2.5em;
@@ -808,6 +795,7 @@ footer #commentaire
 position:absolute;
 height:150px;
 width:180px;
+top: 90px;
 }
 
 
@@ -835,5 +823,43 @@ footer #envoyer
   position:absolute;
   left:20px;
   top:160px;
+}
+
+
+
+/* PHILOSOPHIE */
+#philo
+{
+    text-align: justify;
+}
+
+
+
+
+/* Bouton RETOUR */
+#retour
+{
+display:inline-block;
+margin-left:46%;
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+margin-top:15px;
+border: solid 1px;
+background-color:rgba(240,240,240,1);
+border-radius:5px;
+color:black;
+box-shadow: 0px -6px 10px rgba(200,200,200,1) inset;
+}
+#retour:hover
+{
+font-family:'jap2';
+font-size: 1.4em;
+padding:5px;
+border: solid 1px black;
+background-color:#9b0000;
+border-radius:5px;
+color:white;
+box-shadow: 0px -6px 10px #690000 inset;
 }
 

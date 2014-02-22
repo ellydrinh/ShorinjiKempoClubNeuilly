@@ -2,7 +2,7 @@
 
 class PagesController < ApplicationController
   def home
-    @titre = "Accueil"
+        @titre = "Accueil"
   end
 
   def asso
