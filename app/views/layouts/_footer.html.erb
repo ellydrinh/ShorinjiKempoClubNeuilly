@@ -1,6 +1,6 @@
 <footer>
 <div id="colonnes">
-		
+
 		<div id="posts">
 			<h1>Derniers posts</h1>
 			<h2><%= link_to "Stage Chesnay", articles_path %></h2>
@@ -10,26 +10,25 @@
 		<div id="contacts">
 			<h1>Contact</h1>
 
-
-			<%= form_for @message, :url => contact_path do |form| %>
+			<%= form_tag("/contact", method: "post") do %>
 			  <fieldset class="fields">
 			    <div class="field">
-			      <%= form.label :nom, id:"nom" %>
-			      <%= form.text_field :name, id:"txtnom" %>
+			      <%= label "name", "nom" %>
+			      <%= text_field "message", "name" %>
 			    </div>
-			    
+
 			    <div class="field">
-			      <%= form.label :'e-mail', id:"mail" %>
-			      <%= form.text_field :email, id:"txtmail" %>
+			      <%= label "mail", "e-mail" %>
+			      <%= text_field "message", "email" %>
 			    </div>
-			    
+
 			    <div class="field">
-			      <%= form.label :'votre message', id:"votremessage" %>
-			      <%= form.text_area :body, id:"commentaire" %>
+			      <%= label "message", 'votre message' %>
+			      <%= text_area "message", "body" %>
 			    </div>
 			  </fieldset>
-			  <%= form.submit "Envoyer", id:"envoyer"%>
-			<% end %>	
+			  <%= submit_tag "Envoyer" %>
+			<% end %>
 
 
 
