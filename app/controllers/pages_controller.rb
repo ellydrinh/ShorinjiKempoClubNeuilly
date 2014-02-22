@@ -2,8 +2,7 @@
 
 class PagesController < ApplicationController
   def home
-    @message = Message.new
-        @titre = "Accueil"
+    @titre = "Accueil"
   end
 
   def asso
@@ -28,7 +27,7 @@ class PagesController < ApplicationController
 
   def sk1
     @message =""
-        @titre = "Historique" 
+        @titre = "Historique"
   end
 
   def sk2
@@ -59,5 +58,5 @@ class PagesController < ApplicationController
   def sk4
     @message =""
         @titre = "Philosophie"
-  end      
+  end
 end
