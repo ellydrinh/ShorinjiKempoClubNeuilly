@@ -488,19 +488,13 @@ box-shadow: 0px -6px 10px #690000 inset;
 display: inline-block;
 position: relative;
 left:25px;
-margin-bottom:400px;
+margin-bottom:810px;
 }
 
 #blocs h1
 {
 font-size: 2.5em;
 font-family: 'jap2';
-margin-left:30px;
-margin-top: 23px;
-}
-#bloc4 h1
-{
-top:60px;
 margin-left:30px;
 margin-top: 23px;
 }
@@ -549,11 +543,11 @@ left:600px;
 #bloc4
 {
 background-color: #a6aaac;
-position: relative;
+position: absolute;
 height: 400px;
 width: 250px;
 left: 300px;
-top:400px;
+top:420px;
 }
 #bloc1 a, #bloc2 a, #bloc3 a, #bloc4 a
 {
@@ -620,7 +614,10 @@ margin-right:10px;
 font-family: 'arial';
 }
 
-
+#chinkon
+{
+  text-align: center;
+}
 
 
 /* MEDIAS */
