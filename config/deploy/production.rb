@@ -1,4 +1,4 @@
-set :deploy_to, "/home/royallys/www/#{application}_production"
+set :deploy_to, "/home/royallys/www/skneuilly_production"
 
 set :rvm_ruby_string, 'ree'
 require "rvm/capistrano"
