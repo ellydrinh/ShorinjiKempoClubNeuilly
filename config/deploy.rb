@@ -3,18 +3,16 @@ set :repository, "git@github.com:ellydrinh/ShorinjiKempoClubNeuilly.git"
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+require 'bundler/capistrano'
+require 'capistrano/ext/multistage'
+require 'bundler/setup'
+require 'production_chain/capistrano'
 
-set :user, "royallys"
-set :runner, "royallys"
-set :use_sudo, false
-set :rails_env, "production"
-set :branch, "production"
-set :deploy_to, "/home/royallys/www/skneuilly_production"
-
-role :web, "62.210.239.193"                          # Your HTTP server, Apache/etc
-role :app, "62.210.239.193"                          # This may be the same as your `Web` server
-role :db,  "62.210.239.193", :primary => true # This is where Rails migrations will run
-role :db,  "62.210.239.193"
+set :stages, %w(production)
+set :scm, "git"
+set :repository_cache, "git_cache"
+set :copy_exclude, [".DS_Store", ".git", "tmp/import"]
+ssh_options[:forward_agent] = true
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
