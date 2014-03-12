@@ -14,6 +14,13 @@ set :repository_cache, "git_cache"
 set :copy_exclude, [".DS_Store", ".git", "tmp/import"]
 ssh_options[:forward_agent] = true
 
+set :default_environment, {
+  'PATH' => "/home/royallys/.rvm/gems/ruby-1.9.3-p448@skneuilly/bin:/home/royallys/.rvm/gems/ruby-1.9.3-p448@global/bin:/home/royallys/.rvm/rubies/ruby-1.9.3-p448/bin:/home/royallys/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games",
+  'RUBY_VERSION' => '1.9.3p448',
+  'GEM_HOME' => '/home/royallys/.rvm/gems/ruby-1.9.3-p448@skneuilly',
+  'GEM_PATH' => '/home/royallys/.rvm/gems/ruby-1.9.3-p448@skneuilly:/home/royallys/.rvm/gems/ruby-1.9.3-p448@global'
+}
+
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
 
