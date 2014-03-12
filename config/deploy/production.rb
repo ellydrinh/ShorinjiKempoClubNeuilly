@@ -1,9 +1,3 @@
-
-
-role :app, "ks392825.kimsufi.com", :primary => true
-role :web, "ks392825.kimsufi.com"
-role :db,  "ks392825.kimsufi.com", :primary => true
-
 set :deploy_to, "/home/royallys/www/skneuilly_production"
 
 set :user, "royallys"
