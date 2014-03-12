@@ -40,6 +40,7 @@ end
 
 gem 'capistrano', '2.15.5'
 gem 'capistrano-ext'
+gem "production_chain", "= 0.0.5"
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
