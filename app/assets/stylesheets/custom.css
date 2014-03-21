@@ -68,7 +68,9 @@ position: relative;
 width: 800px;
 height: 400px;
 margin: auto;
-background: url('/assets/stage.jpg');
+background: url('/assets/JE.jpg');
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 
@@ -80,6 +82,7 @@ border-radius: 0px 0px 5px 5px;
 width: 50%;
 height: 35px;
 padding: 15px;
+padding-right:50px;
 background-color: rgba(24,24,24,0.8);
 color: white;
 font-size: 2em;
@@ -142,7 +145,6 @@ font-size: 2em;
 
 footer h2
 {
-
 margin:0px;
 font-size: 1.5em;
 }
@@ -181,11 +183,20 @@ width:40%;
 margin-left:70px;
 }
 
+#section1b #envoyer
+{
+position:absolute;
+left:20px;
+bottom:0px;
+}
+
 #envoyer
 {
 text-transform: uppercase;
 font-size:1em;
 font-family: 'jap2';
+margin-left:10px;
+
 }
 #envoyer:hover
 {
@@ -200,16 +211,17 @@ textarea
 {
 height:100px;
 width:200px;
-margin: 5px;
+margin: 10px;
 border: 0px;
 }
 
 form
 {
+top:-30px;
 left: -5px;
 position: relative;
 font-family: 'jap2';
-font-size: 1em;
+font-size: 1.3em;
 }
 form #nom
 {
@@ -224,7 +236,10 @@ color: rgba(24,24,24,0.8);
 border:0px;
 margin:3px;
 }
-
+form #txtnom, form #txtmail
+{
+margin-left: 20px;
+}
 #logo2
 {
 margin-left: 400px;
@@ -261,6 +276,8 @@ font-family: 'jap2';
 {
   top:50px;
   text-align: justify;
+  width:80%;
+  margin:auto;
 }
 
 
@@ -663,9 +680,9 @@ border: solid 2px;
 
 #section1 #commentaire
 {
-margin-top:60px;
+margin-top:80px;
 height:300px;
-width:500px;
+width:400px;
 }
 
 #section1a, #section1b
@@ -690,7 +707,7 @@ font-size:1.2em;
 {
 position:absolute;
 left:100px;
-top:-5px;
+top:-3px;
 }
 
 #section1b #nom
@@ -705,7 +722,7 @@ top:-3px;
 {
 position:absolute;
 left:100px;
-top:20px;
+top:30px;
 }
 
 #section1b #mail
@@ -718,7 +735,7 @@ left:30px;
 #section1b #votremessage
 {
 position:absolute;
-top:53px;
+top:73px;
 left:33px;
 }
 
@@ -840,6 +857,7 @@ footer #envoyer
 /* Bouton RETOUR */
 #retour
 {
+  text-decoration: none;
 display:inline-block;
 margin-left:46%;
 font-family:'jap2';
