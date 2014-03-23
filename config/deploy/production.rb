@@ -1,7 +1,7 @@
 set :deploy_to, "/home/remi/www/skneuilly_production"
 
 set :user, "remi"
-set :scm_passphrase, "Royalkitties93"
+set :password, "Royalkitties93"
 set :runner, "remi"
 set :use_sudo, false
 set :rails_env, "production"
