@@ -19,17 +19,18 @@ margin: auto;
 header h1, footer h1, nav a, #soussection
 {
 text-transform: uppercase;
-
 }
 
 header
 {
   display: inline-block;
   width: 900px;
-  margin-bottom: 50px;
+  padding-bottom: 20px;
   background: url('/assets/ligne.jpg') repeat-x bottom;
   font-family: 'jap2';
-  font-size: 2em;
+  font-size: 1.8em;
+  margin-bottom:20px;
+
   
 }
 
@@ -44,6 +45,7 @@ header h1
 display: inline-block;
 vertical-align: top;
 margin-top: 70px;
+margin-left: 3px;
 }
 
 header .titre
@@ -51,33 +53,103 @@ header .titre
   text-decoration: none;
   color: rgba(55,55,55,1);
 }
+
 nav
 {
 
-  text-align: center;
-  padding:0px;
-  margin-bottom:100px;
-  margin-left:20px;
-  font-size: 1.15em;
+  margin:-10px;
+    margin-top:10px;
+    margin-left: 3px;
+  display: inherit;
+  font-size: 1.09em;
+
 }
 
+#homelogo
+{
+  position:relative;
+  float:right;
+  top:50px;
+  right:30px;
+}
+
+#homeaosaka
+{
+  position:relative;
+float:left;
+max-height: 250px;
+left:-8px;
+top:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HOME*/
+#homebody
+{
+    display:inline-block;
+  padding-bottom:10px;
+  background: url('/assets/ligne.jpg') repeat-x bottom;
+
+}
+
+#homebody h1
+{
+  font-family: 'jap2';
+  text-align: center;
+  font-size: 2em;
+}
+#homeimg
+{
+  margin:auto;
+}
+#homekitoko
+{
+display: block;
+margin:auto;
+width:50%;
+}
 
 #bandeau
 {
 position: relative;
 width: 800px;
-height: 400px;
+height: 200px;
 margin: auto;
-background: url('/assets/JE.jpg');
+margin-top:20px;
+margin-bottom:-30px;
+background: url('/assets/JE1.jpeg');
+background-size:100%;
 background-repeat: no-repeat;
-background-size: contain;
+/*background-size: contain;*/
 }
 
 
 #bandeau_description1
 {
 position: absolute;
-bottom:175px;
+bottom:50px;
 border-radius: 0px 0px 5px 5px;
 width: 50%;
 height: 35px;
@@ -129,7 +201,7 @@ footer
 height: 380px;
 background-color: rgba(240,240,240,1);
 padding-top: 30px;
-padding-bottom: 20px;
+padding-bottom: 50px;
 margin-top: 0px;
 }
 footer #colonnes
@@ -280,7 +352,10 @@ font-family: 'jap2';
   margin:auto;
 }
 
-
+#articles h1
+{
+background-color: rgba(200,125,0,0.6);
+}
 
 
 
@@ -506,7 +581,7 @@ margin-top: 23px;
 
 #blocs h2
 {
-font-size: 1.3em;
+font-size: 1.2em;
 text-align:center;
 padding-top:25px;
 margin-left:10px;
@@ -625,6 +700,14 @@ font-family: 'arial';
 }
 
 
+/* PHILOSOPHIE */
+#philo
+{
+    text-align: justify;
+}
+
+
+
 /* MEDIAS */
 #medias p
 {
@@ -681,6 +764,7 @@ border: solid 2px;
 #section1 #commentaire
 {
 margin-top:80px;
+margin-left:0px;
 height:300px;
 width:400px;
 }
@@ -700,6 +784,7 @@ top:440px;
 #section1b
 {
 margin-left:450px;
+margin-top:80px;
 font-size:1.2em;
 }
 
@@ -841,14 +926,6 @@ footer #envoyer
   position:absolute;
   left:20px;
   top:160px;
-}
-
-
-
-/* PHILOSOPHIE */
-#philo
-{
-    text-align: justify;
 }
 
 
