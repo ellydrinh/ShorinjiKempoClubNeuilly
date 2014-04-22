@@ -17,6 +17,7 @@ class ContactController < ApplicationController
 
   	private
   		def check_params
-  			# Add validation for email, etc
+  			# LOLOL NICE EMAIL CHECKING
+        true
   		end
 end
