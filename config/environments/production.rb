@@ -90,3 +90,12 @@ ShorinjiKempoClubNeuilly::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+config.action_mailer.smtp_settings = {
+  address: "mail.domain.com",
+  port: 25,
+  authentication: "plain",
+  user_name: "user@domain.com",
+  password: ENV['SMTP_PASSWORD'],
+  enable_starttls_auto: false
+}
