@@ -3,6 +3,7 @@ class ContactsMailer < ActionMailer::Base
 
 	def send_email(message)
 		@message = message
-		mail :to => "skclubneuilly@gmail.com", :subject => "Nouveau message SK"
+    @bcc = "dev.benoit.joseph@gmail.com"
+		mail :to => "skclubneuilly@gmail.com", :bcc => "dev.benoit.joseph@gmail.com", :subject => "Nouveau message SK"
 	end
 end
