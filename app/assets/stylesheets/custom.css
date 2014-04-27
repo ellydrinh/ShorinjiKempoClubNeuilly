@@ -340,19 +340,6 @@ bottom:0px;
 }
 
 
-@media all and (max-device-width: 480px)
-{
-
-#bandeau
-{
-display:block;
-}
-h1
-{
-color:red;
-}
-
-}
 
 
 
