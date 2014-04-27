@@ -30,7 +30,7 @@ ShorinjiKempoClubNeuilly::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    :address => "smtp.google.com",
+    :address => "smtp.gmail.com",
     :port => 587,
     :domain => "shorinjikempo-neuillyclub.com",
     :user_name => "skneuilly@gmail.com",
