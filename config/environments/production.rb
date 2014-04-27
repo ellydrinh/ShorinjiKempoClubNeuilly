@@ -29,6 +29,16 @@ ShorinjiKempoClubNeuilly::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
 
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.google.com",
+    :port => 587,
+    :domain => "shorinjikempo-neuillyclub.com",
+    :user_name => "skneuilly@gmail.com",
+    :password => "dojolachapelle",
+    :authentication => 'plain',
+    :enable_starttls_auto => true
+  }
+
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = false
 

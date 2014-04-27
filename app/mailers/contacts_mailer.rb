@@ -1,5 +1,5 @@
 class ContactsMailer < ActionMailer::Base
-	default :from => "noreply@skneuillyclub.com"
+	default :from => "noreply@shorinjinkempo-neuillyclub.com"
 
 	def send_email(message)
 		@message = message
