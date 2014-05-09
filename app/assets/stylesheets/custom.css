@@ -198,6 +198,7 @@ margin-bottom: 20px;
 font-size: 2.5em;
 text-align: center;
 font-family: 'jap2';
+line-height:5px;
 background: url('/assets/ligne.jpg') repeat-x bottom, url('/assets/ligne.jpg') repeat-x top;
 }
 
@@ -207,9 +208,10 @@ text-decoration: none;
 color:rgba(128,0,0,0.9);
 }
 
+
 footer
 {
-height: 380px;
+height: 220px;
 background-color: rgba(240,240,240,1);
 padding-top: 30px;
 padding-bottom: 50px;
@@ -241,7 +243,7 @@ vertical-align: top;
 #posts
 {
 margin-left:75px;
-width:40%;
+width:33%;
 }
 
 #posts a
@@ -325,9 +327,7 @@ margin-left: 20px;
 }
 #logo2
 {
-margin-left: 400px;
-position:relative;
-margin-top: 80px;
+display:inline-block;
 }
 
 footer p
@@ -336,6 +336,7 @@ width:100%;
 font-size: 0.8em;
 color: rgba(24,24,24,0.8);
 text-align: center;
+margin-top:30px;
 bottom:0px;
 }
 
@@ -484,8 +485,8 @@ font-family:'jap2';
 #asso1
 {
 position: relative;
-width: 800px;
-height: 400px;
+width: 500px;
+height: 375px;
 margin: auto;
 border: solid 2px ;
 margin-bottom: 30px;
@@ -493,8 +494,8 @@ margin-bottom: 30px;
 
 #asso1img
 {
-width: 800px;
-height: 400px;
+height: 375px;
+width:auto;
 
 }
 
@@ -700,7 +701,7 @@ margin-left:0px;
   padding-top:0px;
 text-align:justify;
 margin-right:10px;
-font-family: 'arial';
+font-family: 'helvetica';
 }
 
 #chinkon
@@ -728,7 +729,20 @@ text-align: center;
   text-decoration: none;
   color:rgba(125,0,0,1);
 }
-
+#medias h1
+{
+  font-family: 'jap2';
+  text-align: center;
+  font-size: 2em;
+  padding-top:50px;
+}
+#tract
+{
+  display:block;
+  width:700px;
+  height:auto;
+  margin:auto;
+}
 
 
 

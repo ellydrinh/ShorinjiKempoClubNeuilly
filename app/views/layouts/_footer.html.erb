@@ -7,34 +7,8 @@
 			<h2><%= link_to "Stage national: Embukai", articles_path %></h2>
 			<h2><%= link_to "Stage Chesnay", articles_path %></h2>
 		</div>
-		<div id="contacts">
-			<h1>Contact</h1>
 
-			<%= form_tag("/contact", method: "post") do %>
-			  <fieldset class="fields">
-			    <div class="field">
-			      <%= label "name", "nom", id:"nom" %>
-			      <%= text_field "message", "name", id:"txtnom" %>
-			    </div>
-
-			    <div class="field">
-			      <%= label "mail", "e-mail", id:"mail"  %>
-			      <%= text_field "message", "email", id:"txtmail"  %>
-			    </div>
-
-			    <div class="field">
-			      <%= label "message", 'votre message', id:"votremessage"  %>
-			      <%= text_area "message", "body", id:"commentaire"  %>
-			    </div>
-			  </fieldset>
-			  <%= submit_tag "Envoyer" , id:"envoyer" %>
-			<% end %>
-
-
-
-			</div>
-		<br/>
-		<%= image_tag("tn_logoSK.png", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
+		<%= image_tag("titreSK.jpg", :alt => "Manji du Shorinji Kempo", :id => "logo2") %>
 		<p>© 2013 ShorinjiKempo-NeuillyClub.<br/>
 		Le logo et le nom Shorinji Kempo sont la propriété de la World Shorinji Kempo Organisation</p>
 	</div>
