@@ -8,6 +8,8 @@ body
 {
 font-family: helvetica, verdana, sans-serif;
 color: rgba(55,55,55,1);
+margin:0;
+padding:0;
 }
 
 .container
@@ -16,7 +18,7 @@ width: 900px;
 margin: auto;
 }
 
-header h1, footer h1, nav a, #soussection
+header h1, footer h1, nav a,
 {
 text-transform: uppercase;
 }
@@ -25,7 +27,6 @@ header
 {
   display: inline-block;
   width: 900px;
-  padding-bottom: 20px;
   background: url('/assets/ligne.jpg') repeat-x bottom;
   font-family: 'jap2';
   font-size: 1.8em;
@@ -44,8 +45,8 @@ header h1
 {
 display: inline-block;
 vertical-align: top;
-margin-top: 70px;
-margin-left: 3px;
+margin-top: 73px;
+margin-left: 50px;
 }
 
 header .titre
@@ -56,10 +57,8 @@ header .titre
 
 nav
 {
-
-  margin:-10px;
-    margin-top:10px;
-    margin-left: 3px;
+  margin-top:10px;
+  margin-left: 70px;
   display: inherit;
   font-size: 1.09em;
 
@@ -70,15 +69,26 @@ nav
   position:relative;
   float:right;
   top:50px;
-  right:30px;
+  right:0;
+}
+
+#barrenoire
+{
+display:inline-block;
+width:1px;
+height:146px;
+border-left: 25px solid black;
+position:relative;
+top:26px;
+left:15px;
 }
 
 #homeaosaka
 {
-  position:relative;
+position:relative;
 float:left;
 max-height: 250px;
-left:-8px;
+left:30px;
 top:3px;
 }
 
@@ -106,12 +116,12 @@ top:3px;
 
 
 /*HOME*/
+
 #homebody
 {
-    display:inline-block;
-  padding-left:75px;
-  padding-top:30px;
-   width:50%;
+display:inline-block;
+width:100%;
+height:315px;
 }
 
 #homebody h1
@@ -119,41 +129,67 @@ top:3px;
   font-family: 'jap2';
   text-align: center;
   font-size: 2em;
+  color:rgba(128,0,0,0.9);
 }
-
-}
-#homeimg
+#homebody h2
 {
- left:0px;
-
+  font-family: helvetica;
+  text-align: right;
+  font-size: 1.2em;
+  font-style: italic;
+  padding-bottom:30px;
+  width:100%;
 }
-#homekitoko
+#homebody p
 {
-display: block;
-width:100%;
+  font-size:1.3em;
+  padding-bottom:12px;
 }
 
+#homekitokowrap
+{
+display: inline-block;
+width:439px;
+height:290px;
+margin:auto;
+background:url('/assets/accueil.jpg') ;
+background-size:cover;
+}
+
+#hometxtwrap
+{
+  display: inline-block;
+  width:47%;
+  padding-left:20px;
+  text-align: justify;
+  vertical-align: top;
+}
 
 #bandeau
 {
  display:inline-block;
 vertical-align: top;
-width: 25%;
+width: 100%;
 height: 333px;
-margin-left:60px;
-background: url('/assets/JE1.jpeg');
-background-size:240%;
-background-repeat: no-repeat;
-background-position:-150px 43px;
-/*background-size: contain;*/
+  background-color: rgba(50,50,50,1);
+  box-shadow: 0 5px 15px 0 black inset, 0 -5px 15px 0 black inset;
+
+}
+#homeje
+{
+  display:inline-block;
+  width:30%;
+  position:relative;
+  top:12px;
+  left:80px;
 }
 
 
 #bandeau_description1
 {
 position: relative;
-top:160px;
-left:104px;
+bottom:440px;
+right:-610px;
 border-radius: 0px 0px 5px 5px;
 width:25%;
 height: 30px;
@@ -161,9 +197,35 @@ padding: 15px;
 padding-right:50px;
 background-color: rgba(24,24,24,0.8);
 color: white;
-font-size: 1.5em;
+font-size: 2em;
 font-family: 'jap2';
 text-align: center;
+}
+
+#bandeau h1
+{
+  position:relative;
+  bottom:290px;
+  left:223px;
+  font-family: 'jap2';
+  text-align: center;
+  font-size: 2em;
+  color:white;
+}
+#bandeau p
+{
+  position:relative;
+  width:47%;
+  bottom:180px;
+  left:460px;
+  text-align: justify;
+  font-size: 1.3em;
+  color:white;
+}
+#bandeau strong
+{
+color:#A31F1F;
+font-weight:normal;
 }
 
 #bandeau a
@@ -181,41 +243,41 @@ background: url('/assets/fleche_sprite.png') 0px 0px no-repeat;
 {
   background-position: 0px -35px;
 }
-#bandeau h1
-{
-  position:relative;
-  font-family: 'jap2';
-  text-align: center;
-  font-size: 2em;
-  bottom:-288px;
-}
-section #soussection
+
+
+
+
+
+
+
+#soussection
 {
 padding-bottom: 1px;
 padding-top: 40px;
-margin-top: 50px;
+margin-top: 20px;
 margin-bottom: 20px;
-font-size: 2.5em;
+font-size: 1.5em;
 text-align: center;
-font-family: 'jap2';
+
 line-height:5px;
 background: url('/assets/ligne.jpg') repeat-x bottom, url('/assets/ligne.jpg') repeat-x top;
 }
 
-section #soussection a
+#soussection a
 {
+  font-size: 1.6em;
+  font-family: 'jap2';
 text-decoration: none;
 color:rgba(128,0,0,0.9);
 }
 
-
 footer
 {
 height: 220px;
-background-color: rgba(240,240,240,1);
-padding-top: 30px;
+background-color: rgba(50,50,50,1);
 padding-bottom: 50px;
 margin-top: 0px;
+box-shadow: 0 5px 15px 0 black inset;
 }
 footer #colonnes
 {
@@ -226,6 +288,7 @@ footer h1
 {
 font-family: 'jap2';
 font-size: 2em;
+color:white;
 }
 
 footer h2
@@ -249,7 +312,7 @@ width:33%;
 #posts a
 {
 text-decoration: none;
-color:rgba(0,0,0,0.5);
+color:rgba(0,0,0,1);
 display:inline-block;
 padding:5px;
 margin-bottom:10px;
@@ -327,18 +390,33 @@ margin-left: 20px;
 }
 #logo2
 {
-display:inline-block;
+  position:absolute;
+  display:inline-block;
+  padding-left:30px;
+  padding-top:60px;
 }
-
+#aert
+{
+  width:1px;
+  height:1px;
+  position:relative;
+  border:22px solid white;
+  border-radius: 100%;
+  bottom:-88px;
+  left:359px;
+}
 footer p
 {
 width:100%;
 font-size: 0.8em;
-color: rgba(24,24,24,0.8);
+color:white;
 text-align: center;
-margin-top:30px;
 bottom:0px;
 }
+
+
+
+
 
 
 
@@ -348,6 +426,7 @@ bottom:0px;
 #articles p
 {
   margin-bottom: 50px;
+  font-size:1.2em;
 }
 #articles h1, #articles h2
 {
@@ -365,11 +444,32 @@ font-family: 'jap2';
 #articles h1
 {
 background-color: rgba(200,125,0,0.6);
+font-size:2.2em;
+}
+#articles h2
+{
+font-size:1.6em;
+}
+#articles #h2
+{
+font-size:1.6em;
+position:relative;
+left:-105px;
 }
 
+#jeart
+{
+  display:inline-block;
+  width:10%;
+  padding: 60px 15px 40px 15px;
+}
 
-
-
+#formattxt
+{
+  display:inline-block;
+width:85%;
+vertical-align: top;
+}
 
 
 
@@ -426,6 +526,7 @@ background-color: #a6aaac;
 position: absolute;
 height: 400px;
 width: 250px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 
 #bloc2a
@@ -435,6 +536,7 @@ position: absolute;
 height: 400px;
 width: 250px;
 left: 300px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 
 #bloc1a a, #bloc2a a
@@ -484,18 +586,21 @@ font-family:'jap2';
 
 #asso1
 {
+  float:left;
 position: relative;
 width: 500px;
 height: 375px;
 margin: auto;
 border: solid 2px ;
-margin-bottom: 30px;
+margin-bottom: 50px;
+margin-right: 40px;
 }
 
 #asso1img
 {
 height: 375px;
-width:auto;
+width: 500px;
+float:left;
 
 }
 
@@ -613,6 +718,7 @@ background-color: #a6aaac;
 position: absolute;
 height: 400px;
 width: 250px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 #bloc2
 {
@@ -621,6 +727,7 @@ position: absolute;
 height: 400px;
 width: 250px;
 left: 300px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 #bloc3
 {
@@ -629,6 +736,7 @@ position: absolute;
 height: 400px;
 width: 250px;
 left:600px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 #bloc4
 {
@@ -638,6 +746,7 @@ height: 400px;
 width: 250px;
 left: 300px;
 top:420px;
+box-shadow: 5px 5px 5px 0 rgba(50,50,50,0.8);
 }
 #bloc1 a, #bloc2 a, #bloc3 a, #bloc4 a
 {
@@ -685,7 +794,7 @@ float:right;
   float:left;
   position:relative;
   padding-right: 20px;
-  top:50px;
+  top:0;
 }
 #maintechniques #blocs
 {
@@ -714,6 +823,10 @@ font-family: 'helvetica';
 #philo
 {
     text-align: justify;
+}
+#philo h1
+{
+  font-family:'jap2', helvetica;
 }
 
 

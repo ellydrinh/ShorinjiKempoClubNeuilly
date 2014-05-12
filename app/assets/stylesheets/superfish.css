@@ -49,7 +49,6 @@
 	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
 	border-top: 1px solid rgba(255,255,255,.5);
 	padding: .75em 1em;
-  background-color: rgba(55,55,55,0.1);
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
