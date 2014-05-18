@@ -87,9 +87,9 @@ left:15px;
 {
 position:relative;
 float:left;
-max-height: 250px;
+max-height: 165px;
 left:30px;
-top:3px;
+top:8px;
 }
 
 
@@ -201,6 +201,7 @@ font-size: 2em;
 font-family: 'jap2';
 text-align: center;
 }
+
 
 #bandeau h1
 {
@@ -450,26 +451,14 @@ font-size:2.2em;
 {
 font-size:1.6em;
 }
-#articles #h2
-{
-font-size:1.6em;
-position:relative;
-left:-105px;
-}
 
 #jeart
 {
-  display:inline-block;
+  float:left;
   width:10%;
-  padding: 60px 15px 40px 15px;
+  padding-right:20px;
 }
 
-#formattxt
-{
-  display:inline-block;
-width:85%;
-vertical-align: top;
-}
 
 
 
@@ -594,7 +583,7 @@ margin: auto;
 border: solid 2px ;
 margin-bottom: 50px;
 margin-right: 40px;
-background-image:url('../images/asso1.jpg');
+background-image:url('../images/asso1.png');
 background-size:cover;
 }
 
